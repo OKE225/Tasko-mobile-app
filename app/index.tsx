@@ -1,11 +1,11 @@
+import Container from "@/components/Container";
 import WeekCalendar from "@/components/WeekCalendar";
 import { Pressable, Text, View } from "react-native";
-import { SafeAreaView } from "react-native-safe-area-context";
 import "./global.css";
 
 export default function TodayScreen() {
   return (
-    <SafeAreaView className="bg-white flex-1 p-4 gap-3">
+    <Container>
       <View className="bg-[#E9E7FF] relative w-full h-60 rounded-[32px] overflow-hidden">
         <View className="bg-white/80 absolute self-center bottom-[-75px] w-[250px] h-[250px] rounded-full" />
 
@@ -39,6 +39,6 @@ export default function TodayScreen() {
           </Text>
         </Pressable>
       </View>
-    </SafeAreaView>
+    </Container>
   );
 }
